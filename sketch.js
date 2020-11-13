@@ -83,8 +83,8 @@ function title() {
   text('click anywhere to start', w / 2, h / 2);
 
   textSize(20);
-  text('use arrow keys help bunny eat some carrots', w / 2, h / 1.5);
-  
+  text('use arrow keys to help bunny eat some carrots', w / 2, h / 1.5);
+
 }
 
 
