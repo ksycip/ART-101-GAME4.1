@@ -81,7 +81,12 @@ function title() {
 
   textSize(30);
   text('click anywhere to start', w / 2, h / 2);
+
+  textSize(20);
+  text('use arrow keys help bunny eat some carrots', w / 2, h / 1.5);
+  
 }
+
 
 function titleMouseClicked() {
   console.log('canvas is clicked on title page');
