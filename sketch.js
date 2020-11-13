@@ -14,7 +14,7 @@ let coinImg;
 
 function preload(){
   playerImg = loadImage('assets/bunny2.png');
-  coinImg = loadImage('assets/carrot1.png');
+  coinImg = loadImage('assets/carrot3.png');
 }
 
 function setup() {
@@ -77,7 +77,7 @@ function title() {
   textSize(80);
   fill(255);
   textAlign(CENTER);
-  text('MY GAME', w / 2, h / 5);
+  text('HUNGRY BUNNY', w / 2, h / 5);
 
   textSize(30);
   text('click anywhere to start', w / 2, h / 2);
@@ -131,7 +131,10 @@ function level1() {
     points++;
     console.log(points);
     coins.splice(i, 1);
-    }
+  } else if (coins[i].y > h){
+    coins.splice(i, 1);
+    console.log('coin is out of canvas')
+  }
   }
 
   text(`points: ${points}`, w / 4, h - 30);
